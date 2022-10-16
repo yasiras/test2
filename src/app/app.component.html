@@ -1,0 +1,37 @@
+<!-- <h1>{{title}}</h1>
+<h1>{{user.name|custompipe:user.name}}</h1> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <div class="header"><app-box></app-box></div> -->
+  <div class="main-container">
+    <div class="nav-container fluid">
+      <img src="../assets/gadgeon.jpg" id="gadgeonimg">
+
+      <ul class="navbar nav">
+        <li><a class="active nav-item" routerLink="Home">Home</a></li>
+        <li><a class="nav-item" routerLink="Services">Services</a></li>
+        <li><a class="nav-item" routerLink="Contact">Contact</a></li>
+        <li><a class="nav-item" routerLink="About">About</a></li>
+      </ul>
+    </div>
+    <div class="component-container">
+      <!-- <app-box1></app-box1>
+      <app-box2></app-box2>
+      <app-box3></app-box3>
+      <app-box4></app-box4> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</body>
+
+</html>
